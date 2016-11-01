@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/compose_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <TextView
+            android:id="@+id/compose_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/compose_profile" />
+
+        <TextView
+            android:id="@+id/compose_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/compose_name"
+            android:layout_toLeftOf="@+id/compose_profile" />
+
+        <ImageView
+            android:id="@+id/compose_profile"
+            android:layout_width="@dimen/profile_img_size"
+            android:layout_height="@dimen/profile_img_size"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D9D9D9"/>
+
+    <EditText
+        android:padding="16dp"
+        android:id="@+id/compose_status"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="4"
+        android:gravity="top|left"
+        android:hint="What's happening?" />
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@android:color/black" />-->
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_toLeftOf="@+id/compose_btn"
+            android:layout_alignBottom="@+id/compose_btn"
+            android:id="@+id/compose_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textColor="@android:color/white"
+            android:background="@drawable/button"
+            android:id="@+id/compose_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Tweet" />
+    </RelativeLayout>
+
+</LinearLayout>
