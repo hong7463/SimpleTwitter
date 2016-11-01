@@ -77,9 +77,9 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "click");
-                Intent intent = new Intent(context, DetailsActivity.class);
-                intent.putExtra("tweet", Parcels.wrap(tweet));
-                context.startActivity(intent);
+//                Intent intent = new Intent(context, DetailsActivity.class);
+//                intent.putExtra("tweet", Parcels.wrap(tweet));
+//                context.startActivity(intent);
             }
         });
     }
